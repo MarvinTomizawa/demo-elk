@@ -1,0 +1,1 @@
+docker run -p 8080:8080 --log-driver=syslog --log-opt syslog-address=tcp://:5000 --log-opt tag={{.Name}} --log-opt syslog-facility=daemon dockerfile
